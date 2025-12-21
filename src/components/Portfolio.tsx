@@ -2,13 +2,20 @@
 
 import { Play, ExternalLink } from 'lucide-react'
 import { Button } from './ui/button'
+import { motion } from 'framer-motion'
 
 export function Portfolio() {
   return (
     <section id="portfolio" className="relative py-32 bg-background">
       <div className="container mx-auto px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
-        <div className="text-center mb-20">
+        <motion.div 
+          className="text-center mb-20"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <div className="inline-flex items-center gap-3 mb-6">
             <div className="w-3 h-3 bg-accent-emerald rounded-full animate-pulse" />
             <span className="text-sm font-semibold text-muted-foreground">
@@ -18,23 +25,29 @@ export function Portfolio() {
           </div>
           
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-tight mb-8">
-            <span className="block mb-2">Creative Productions</span>
+            <span className="block mb-2">Latest Projects</span>
           </h2>
           
           <p className="text-2xl lg:text-3xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Our latest commercial for Hampton - exploring the lonely journey of startup founders and the power of community.
+            Check out the official music video for "HIM", a collaborative single by Southside Mohammed (featuring Jordan Ajibade) off his recent EP release, "Where The Bad Guys Fly" - executive production by 808x and visual production by THE. BUZZ. Watch the video on Youtube or listen to the EP on all major streaming platforms.
           </p>
-        </div>
+        </motion.div>
 
         {/* Featured Video */}
-        <div className="max-w-6xl mx-auto">
+        <motion.div 
+          className="max-w-6xl mx-auto"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+        >
           <div className="relative bg-card clean-border rounded-3xl overflow-hidden elevated-shadow">
             {/* Video Embed */}
             <div className="relative">
               <div className="aspect-video">
                 <iframe
-                  src="https://www.youtube.com/embed/fIbDWDh6aYw?rel=0&showinfo=0&modestbranding=1"
-                  title="Hampton Commercial - The Lonely Journey"
+                  src="https://www.youtube.com/embed/wsxrEpfstX4?rel=0&showinfo=0&modestbranding=1"
+                  title="Southside Mohammed - HIM (feat. Jordan Ajibade)"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
@@ -50,48 +63,47 @@ export function Portfolio() {
               </div>
             </div>
 
-            {/* Project Details */}
             <div className="p-8 lg:p-12">
               <div className="flex-1">
                 <div className="flex items-center gap-4 mb-4">
                   <span className="bg-accent-purple/10 text-accent-purple px-3 py-1 rounded-full text-sm font-medium">
-                    Commercial
+                    Music Video
                   </span>
                   <span className="text-sm text-muted-foreground">
-                    Client: Hampton
+                    Artist: Southside Mohammed ft. Jordan Ajibade
                   </span>
                 </div>
                 
                 <h3 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-                  The Lonely Journey
+                  HIM
                 </h3>
                 
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  A powerful commercial exploring the isolation that startup founders face and how joining Hampton's community can transform that journey. This piece captures the emotional weight of entrepreneurship and the relief that comes with finding your tribe.
+                  Official music video for "HIM", a collaborative single by Southside Mohammed featuring Jordan Ajibade from the EP "Where The Bad Guys Fly". Executive production by 808x and visual production by THE. BUZZ.
                 </p>
                 
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
                   <div>
                     <span className="text-muted-foreground block">Industry</span>
-                    <span className="font-medium">Community Platform</span>
+                    <span className="font-medium">Music Video</span>
                   </div>
                   <div>
                     <span className="text-muted-foreground block">Style</span>
-                    <span className="font-medium">Narrative Drama</span>
+                    <span className="font-medium">Hip Hop/R&B</span>
                   </div>
                   <div>
-                    <span className="text-muted-foreground block">Tone</span>
-                    <span className="font-medium">Emotional Journey</span>
+                    <span className="text-muted-foreground block">Production</span>
+                    <span className="font-medium">808x / THE. BUZZ</span>
                   </div>
                   <div>
                     <span className="text-muted-foreground block">Format</span>
-                    <span className="font-medium">Digital Commercial</span>
+                    <span className="font-medium">Official Music Video</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

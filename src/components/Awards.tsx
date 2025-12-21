@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
 import minimalBestFilm from '../assets/minimal-best-film.png'
 import minimalAudienceChoice from '../assets/minimal-audience-choice.png'
 import minimalInnovation from '../assets/minimal-innovation.png'
@@ -71,10 +72,13 @@ export function Awards() {
           {/* Awards Grid */}
           <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             {awards.map((award, index) => (
-              <div
+              <motion.div
                 key={index}
                 className="group relative flex flex-col items-center text-center"
-                style={{ animationDelay: award.delay }}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 
                 {/* Award Pedestal */}
@@ -105,7 +109,7 @@ export function Awards() {
                   <div className="float-gentle absolute inset-0 pointer-events-none" />
                 </div>
 
-              </div>
+              </motion.div>
             ))}
           </div>
 
