@@ -19,6 +19,7 @@ export default {
     extend: {
       fontFamily: {
         bagel: ['Bagel Fat One', 'cursive'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
       colors: {
         border: "var(--border)",

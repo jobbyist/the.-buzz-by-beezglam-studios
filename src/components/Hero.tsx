@@ -129,12 +129,13 @@ export function Hero() {
             {/* Logo */}
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="flex items-center cursor-pointer"
+              className="flex flex-col items-start cursor-pointer"
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: 'smooth' })
               }}
             >
-              <span className="font-bagel text-white text-xl tracking-wider">MOJJU</span>
+              <span className="font-montserrat font-black text-white text-xl tracking-wider">THE. BUZZ</span>
+              <span className="text-white/70 text-xs mt-0.5">A Creative Hub By BEEZGLAM STUDIOS</span>
             </motion.div>
 
             {/* Navigation Menu */}
@@ -201,7 +202,7 @@ export function Hero() {
                 }}
                 className="hidden sm:block bg-red-600 backdrop-blur-sm text-white font-semibold px-6 py-3 rounded-md hover:bg-red-700 gentle-animation ml-4 cursor-pointer"
               >
-                Book a Call
+                Get Started Today
               </motion.button>
 
               {/* Mobile Hamburger Menu Button */}
@@ -298,7 +299,7 @@ export function Hero() {
               }}
               className="bg-red-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-red-700 active:bg-red-800 gentle-animation mt-8 cursor-pointer"
             >
-              Book a Call
+              Get Started Today
             </motion.button>
           </div>
         </div>
@@ -315,10 +316,12 @@ export function Hero() {
       >
         <div className="max-w-2xl">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight text-white">
-            <span className="block">AI FILM</span>
-            <span className="block">PRODUCTION</span>
-            <span className="block">WITHOUT LIMITS</span>
+            <span className="block">WHERE CREATIVITY</span>
+            <span className="block">MEETS INNOVATION</span>
           </h1>
+          <p className="text-lg sm:text-xl text-white/90 mt-4 font-medium">
+            Transform Your Vision Into Reality
+          </p>
         </div>
       </motion.div>
 
