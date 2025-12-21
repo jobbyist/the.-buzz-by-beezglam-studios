@@ -107,7 +107,7 @@ export function Hero() {
         loop
         playsInline
       >
-        <source src="https://mojli.s3.us-east-2.amazonaws.com/Mojli+Website+upscaled+(12mb).webm" type="video/webm" />
+        <source src="/websiteassets/6fda1fe567f44d46a6ea5830d35a5e53.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
