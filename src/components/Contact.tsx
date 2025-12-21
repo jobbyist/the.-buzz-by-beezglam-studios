@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
+import { motion } from 'framer-motion'
 
 export function Contact() {
 
@@ -61,7 +62,13 @@ export function Contact() {
     <section id="contact" className="relative py-32 bg-card/30">
       <div className="container mx-auto px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <div className="inline-flex items-center gap-3 mb-6">
             <div className="w-3 h-3 bg-accent-emerald rounded-full animate-pulse" />
             <span className="text-sm font-semibold text-muted-foreground">
@@ -78,10 +85,16 @@ export function Contact() {
           <p className="text-2xl lg:text-3xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Book a discovery call to discuss your project and see how we can bring your vision to cinematic reality
           </p>
-        </div>
+        </motion.div>
 
         {/* Cal.com Booking Widget */}
-        <div className="max-w-5xl mx-auto">
+        <motion.div 
+          className="max-w-5xl mx-auto"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+        >
           <div className="bg-background clean-border rounded-3xl overflow-hidden elevated-shadow">
             {/* Widget Header */}
             <div className="bg-card/50 px-8 py-6 border-b border-border">
@@ -148,7 +161,7 @@ export function Contact() {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

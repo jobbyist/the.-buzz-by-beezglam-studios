@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { ImageWithFallback } from './figma/ImageWithFallback'
+import { motion } from 'framer-motion'
 
 export function Services() {
   const [isVisible, setIsVisible] = useState(false)

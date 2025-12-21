@@ -6,10 +6,17 @@ import { Services } from './components/Services'
 import { Team } from './components/Team'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
+import { motion } from 'framer-motion'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground" style={{ overflow: 'visible' }}>
+    <motion.div 
+      className="min-h-screen bg-background text-foreground" 
+      style={{ overflow: 'visible' }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <main className="relative" role="main" style={{ overflow: 'visible' }}>
         <section id="hero" aria-label="Hero section">
           <Hero />
@@ -34,6 +41,6 @@ export default function App() {
         </section>
       </main>
       <Footer />
-    </div>
+    </motion.div>
   )
 }

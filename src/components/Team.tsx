@@ -1,6 +1,7 @@
 'use client'
 
 import { ImageWithFallback } from './figma/ImageWithFallback'
+import { motion } from 'framer-motion'
 import marcusPhoto from '../assets/team-member-1.png'
 import sofiaPhoto from '../assets/team-member-2.png'
 import jakePhoto from '../assets/team-member-3.png'
@@ -204,9 +205,13 @@ export function Team() {
                     maxHeight: 'none' 
                   }}>
                     {wantedCriminals.slice(0, 4).map((criminal, index) => (
-                      <div
+                      <motion.div
                         key={criminal.name}
                         className={`group transform ${criminal.rotation} hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-20`}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
                         style={{
                           filter: 'drop-shadow(4px 4px 8px rgba(0,0,0,0.3))',
                           overflow: 'visible',
@@ -280,7 +285,7 @@ export function Team() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </motion.div>
                     ))}
                   </div>
                   
@@ -292,9 +297,13 @@ export function Team() {
                     maxHeight: 'none' 
                   }}>
                     {wantedCriminals.slice(4, 7).map((criminal, index) => (
-                      <div
+                      <motion.div
                         key={criminal.name}
                         className={`group transform ${criminal.rotation} hover:rotate-0 transition-all duration-500 hover:scale-105 hover:z-20`}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
                         style={{
                           filter: 'drop-shadow(4px 4px 8px rgba(0,0,0,0.3))',
                           overflow: 'visible',
@@ -368,7 +377,7 @@ export function Team() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </motion.div>
                     ))}
                   </div>
                 </div>
