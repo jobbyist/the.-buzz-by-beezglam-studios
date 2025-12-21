@@ -126,7 +126,7 @@ export function Contact() {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Bottom Info */}
         <div className="text-center mt-12">
@@ -161,7 +161,7 @@ export function Contact() {
               </p>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )
