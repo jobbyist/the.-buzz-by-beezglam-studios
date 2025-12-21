@@ -66,7 +66,7 @@ export function Services() {
 
   return (
     <section id="services" className="relative py-20" style={{
-      background: 'linear-gradient(135deg, #2d1810 0%, #1a0f08 30%, #0f0704 60%, #1a0f08 100%)',
+      background: 'black',
       overflow: 'visible'
     }}>
       
@@ -102,13 +102,13 @@ export function Services() {
           <h2 className={`text-5xl sm:text-6xl lg:text-7xl font-black leading-tight mb-6 text-amber-100 transform transition-all duration-1000 delay-200 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
           }`}>
-            What We Develop
+            Service Offering
           </h2>
           
           <p className={`text-xl text-amber-200/90 leading-relaxed max-w-3xl mx-auto transform transition-all duration-1000 delay-400 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
           }`}>
-            Developed with precision, delivered with passion
+            At our creative studio, we pride ourselves on ensuring that every single project we take on is executed with surgical precision and delivered with world-class standards so the end product is developed well enough to speak for itself.
           </p>
         </div>
 
