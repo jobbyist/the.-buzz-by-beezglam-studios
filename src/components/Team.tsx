@@ -13,10 +13,10 @@ import leoPhoto from '../assets/team-member-7.png'
 export function Team() {
   const wantedCriminals = [
     {
-      name: "Marcus 'The Pixel Bandit'",
-      crime: "ARMED CREATIVE ROBBERY",
-      bounty: "$8,500",
-      description: "Notorious for stealing ordinary footage and transforming it into extraordinary visual experiences. Approach with caution - carries dangerous levels of creative vision and technical expertise.",
+      name: "Aline (On The Low)",
+      crime: "SOLO SAE",
+      bounty: "14 December 2025",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
       image: marcusPhoto,
       rotation: 'rotate-3',
       mustacheStyle: "artistic"
@@ -129,12 +129,11 @@ export function Team() {
           </div>
           
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-tight mb-8 text-foreground">
-            <span className="block mb-2">These people are</span>
-            <span className="block text-foreground">WANTED</span>
+            In Case You Missed It….
           </h2>
           
           <p className="text-2xl lg:text-3xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Highly skilled and creatively dangerous
+            Discover our live performance art series dedicated to showcasing the best upcoming & established acts South Africa has to offer.
           </p>
         </div>
 
@@ -247,7 +246,7 @@ export function Team() {
                                     fontFamily: 'serif',
                                     letterSpacing: '0.1em'
                                   }}>
-                                WANTED
+                                {criminal.crime}
                               </h3>
                               <div className="w-full h-0.5 bg-black mb-2" />
                             </div>
@@ -278,7 +277,7 @@ export function Team() {
                             {/* Details */}
                             <div className="text-left space-y-2" style={{ fontFamily: 'serif' }}>
                               <div className="font-black text-lg text-black">{criminal.name}</div>
-                              <div className="font-bold text-red-600 text-base">BOUNTY: {criminal.bounty}</div>
+                              <div className="font-bold text-red-600 text-base">{criminal.bounty}</div>
                               <div className="text-sm text-gray-800 leading-relaxed bg-gray-50/50 p-3 border-l-2 border-black">
                                 {criminal.description}
                               </div>
@@ -339,7 +338,7 @@ export function Team() {
                                     fontFamily: 'serif',
                                     letterSpacing: '0.1em'
                                   }}>
-                                WANTED
+                                {criminal.crime}
                               </h3>
                               <div className="w-full h-0.5 bg-black mb-2" />
                             </div>
@@ -370,7 +369,7 @@ export function Team() {
                             {/* Details */}
                             <div className="text-left space-y-2" style={{ fontFamily: 'serif' }}>
                               <div className="font-black text-lg text-black">{criminal.name}</div>
-                              <div className="font-bold text-red-600 text-base">BOUNTY: {criminal.bounty}</div>
+                              <div className="font-bold text-red-600 text-base">{criminal.bounty}</div>
                               <div className="text-sm text-gray-800 leading-relaxed bg-gray-50/50 p-3 border-l-2 border-black">
                                 {criminal.description}
                               </div>
