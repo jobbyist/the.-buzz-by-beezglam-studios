@@ -65,9 +65,31 @@ export function Footer() {
               <h4 className="font-black text-2xl text-background mb-4">TALK TO US</h4>
               
               {/* New Description */}
-              <p className="text-background/70 text-base leading-relaxed">
+              <p className="text-background/70 text-base leading-relaxed mb-6">
                 If you're looking for a content creation and production team you can trust, look no further. We have all the resources, support and expertise you need to get your project off the ground and we go out of our way to deliver a final product that exceeds your expectations. Use our contact details below to reach out or simply book a discovery call using the booking tool above and we'll be more than happy to assist!
               </p>
+
+              {/* Contact Details */}
+              <div className="space-y-2">
+                <div className="flex items-center gap-2 text-background/80 text-base">
+                  <span className="font-semibold">Email:</span>
+                  <a href="mailto:info@thebuzz.studio" className="hover:text-background transition-colors">
+                    info@thebuzz.studio
+                  </a>
+                </div>
+                <div className="flex items-center gap-2 text-background/80 text-base">
+                  <span className="font-semibold">Telephone:</span>
+                  <a href="tel:0111231234" className="hover:text-background transition-colors">
+                    011 123 1234
+                  </a>
+                </div>
+                <div className="flex items-center gap-2 text-background/80 text-base">
+                  <span className="font-semibold">Whatsapp:</span>
+                  <a href="https://wa.me/27754364071" className="hover:text-background transition-colors">
+                    075 436 4071
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
