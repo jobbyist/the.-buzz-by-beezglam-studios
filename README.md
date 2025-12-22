@@ -62,7 +62,15 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/1169db3a-30f3-49bc-bd0b-9cda42ae0ebe) and click on Share -> Publish.
+### GitHub Pages (Current Setup)
+
+This project is configured to automatically deploy to GitHub Pages at **https://thebuzz.gravitas.uno** when changes are pushed to the `main` branch.
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed setup instructions and DNS configuration requirements.
+
+### Lovable
+
+Alternatively, you can open [Lovable](https://lovable.dev/projects/1169db3a-30f3-49bc-bd0b-9cda42ae0ebe) and click on Share -> Publish.
 
 ## Can I connect a custom domain to my Lovable project?
 
