@@ -1,20 +1,6 @@
 'use client'
 
 export function Footer() {
-  const aiTools = [
-    'Runway Gen-4',
-    'Kling 2', 
-    'Veo 3',
-    'Higgsfield AI',
-    'Hailuo Minimax 2',
-    'Midjourney',
-    'Leonardo AI',
-    'Krea AI',
-    'Runway',
-    'Suno AI',
-    'ElevenLabs'
-  ]
-
   return (
     <footer className="relative py-20 bg-foreground text-background">
       <div className="container mx-auto px-6 sm:px-8 lg:px-12">
@@ -33,9 +19,7 @@ export function Footer() {
               <div className="flex items-center space-x-6">
                 {/* X (Twitter) */}
                 <a
-                  href="https://x.com/Mojjuai"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/"
                   className="hover:scale-110 gentle-animation cursor-pointer"
                 >
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="#E5E7EB">
@@ -45,9 +29,7 @@ export function Footer() {
 
                 {/* TikTok */}
                 <a
-                  href="https://www.tiktok.com/@mojju.ai"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/"
                   className="hover:scale-110 gentle-animation cursor-pointer"
                 >
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF0050">
@@ -57,7 +39,7 @@ export function Footer() {
 
                 {/* Instagram */}
                 <a
-                  href="https://www.instagram.com/mojju.ai"
+                  href="https://www.instagram.com/the.buzz_sandton?igsh=MXR1NWFoZWMxdWtvcA=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:scale-110 gentle-animation cursor-pointer"
@@ -73,42 +55,40 @@ export function Footer() {
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                   </svg>
                 </a>
-
-                {/* LinkedIn */}
-                <a
-                  href="https://linkedin.com/company/mojju"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:scale-110 gentle-animation cursor-pointer"
-                >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#0077B5">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                  </svg>
-                </a>
               </div>
             </div>
           </div>
 
-          {/* Tools We Use Section */}
+          {/* Talk To Us Section */}
           <div className="col-span-12 md:col-span-8">
             <div>
-              <h4 className="font-black text-2xl text-background mb-4">TOOLS WE USE</h4>
+              <h4 className="font-black text-2xl text-background mb-4">TALK TO US</h4>
               
-              {/* AI Tools Description */}
-              <p className="text-background/70 text-base mb-8 leading-relaxed">
-                We leverage the latest AI technology to deliver cutting-edge video production. 
-                Our toolkit combines the best generative AI models for video, audio, and visual content creation.
+              {/* New Description */}
+              <p className="text-background/70 text-base leading-relaxed mb-6">
+                If you're looking for a content creation and production team you can trust, look no further. We have all the resources, support and expertise you need to get your project off the ground and we go out of our way to deliver a final product that exceeds your expectations. Use our contact details below to reach out or simply book a discovery call using the booking tool above and we'll be more than happy to assist!
               </p>
-              
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {aiTools.map((tool, index) => (
-                  <div
-                    key={tool}
-                    className="text-background/80 hover:text-background gentle-animation text-sm font-medium"
-                  >
-                    {tool}
-                  </div>
-                ))}
+
+              {/* Contact Details */}
+              <div className="space-y-2">
+                <div className="flex items-center gap-2 text-background/80 text-base">
+                  <span className="font-semibold">Email:</span>
+                  <a href="mailto:info@thebuzz.studio" className="hover:text-background transition-colors">
+                    info@thebuzz.studio
+                  </a>
+                </div>
+                <div className="flex items-center gap-2 text-background/80 text-base">
+                  <span className="font-semibold">Telephone:</span>
+                  <a href="tel:0111231234" className="hover:text-background transition-colors">
+                    011 123 1234
+                  </a>
+                </div>
+                <div className="flex items-center gap-2 text-background/80 text-base">
+                  <span className="font-semibold">Whatsapp:</span>
+                  <a href="https://wa.me/27754364071" className="hover:text-background transition-colors">
+                    075 436 4071
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -120,8 +100,8 @@ export function Footer() {
             <div className="text-sm text-background/70 mb-4 md:mb-0">
               © 2025 THE. BUZZ. All rights reserved.
             </div>
-            <div className="text-sm text-background/70">
-              2847 HIGHLAND AVE. SUITE 310 BIRMINGHAM 35205, AL, USA
+            <div className="text-sm text-background/70 text-center md:text-right">
+              Website developed and maintained by Gravitas Industries
             </div>
           </div>
         </div>

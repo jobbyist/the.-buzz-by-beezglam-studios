@@ -13,10 +13,10 @@ import leoPhoto from '../assets/team-member-7.png'
 export function Team() {
   const wantedCriminals = [
     {
-      name: "Aline (On The Low)",
+      name: "Alone - On The Low)",
       crime: "SOLO SAE",
       bounty: "14 December 2025",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      description: "Official singke off Solo Sae's latest album release titled 'BEFORE THE THRONE', now available on all stresming platforms. Follow @solo.sae on Instagram.",
       image: marcusPhoto,
       rotation: 'rotate-3',
       mustacheStyle: "artistic"
