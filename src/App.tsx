@@ -6,6 +6,7 @@ import { Services } from './components/Services'
 import { Team } from './components/Team'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
+import { SponsoredAd } from './components/SponsoredAd'
 import { motion } from 'framer-motion'
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
         <section id="portfolio" aria-label="Portfolio section">
           <Portfolio />
         </section>
+        <SponsoredAd size="medium" />
         <section id="awards" aria-label="Awards section">
           <Awards />
         </section>
@@ -33,6 +35,7 @@ export default function App() {
         <section id="services" aria-label="Services section">
           <Services />
         </section>
+        <SponsoredAd size="small" />
         <section id="team" aria-label="Team section" style={{ overflow: 'visible', height: 'auto', minHeight: '0', maxHeight: 'none' }}>
           <Team />
         </section>
