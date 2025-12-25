@@ -4,11 +4,10 @@ import { motion } from 'framer-motion'
 import { ExternalLink } from 'lucide-react'
 
 interface SponsoredAdProps {
-  variant?: 'horizontal' | 'vertical'
   size?: 'small' | 'medium' | 'large'
 }
 
-export function SponsoredAd({ variant = 'horizontal', size = 'medium' }: SponsoredAdProps) {
+export function SponsoredAd({ size = 'medium' }: SponsoredAdProps) {
   const sizeClasses = {
     small: 'py-8',
     medium: 'py-12',
@@ -42,6 +41,8 @@ export function SponsoredAd({ variant = 'horizontal', size = 'medium' }: Sponsor
 
           {/* Ad Placeholder */}
           <div 
+            role="img"
+            aria-label="Advertisement placeholder"
             className={`relative ${contentSizeClasses[size]} max-w-6xl mx-auto bg-card border-2 border-dashed border-muted-foreground/20 rounded-xl overflow-hidden group hover:border-muted-foreground/40 transition-all duration-300`}
           >
             {/* Background Pattern */}
@@ -68,7 +69,7 @@ export function SponsoredAd({ variant = 'horizontal', size = 'medium' }: Sponsor
             </div>
 
             {/* Hover Effect */}
-            <div className="absolute inset-0 bg-accent-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute inset-0 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
 
           {/* Bottom Border Accent */}
