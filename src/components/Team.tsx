@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 import { Instagram, Play, Heart, MessageCircle, Share2 } from 'lucide-react'
 
 export function Team() {
+  const INSTAGRAM_URL = "https://www.instagram.com/the.buzz_sandton"
+  
   const instagramReels = [
     {
       id: 1,
@@ -63,7 +65,7 @@ export function Team() {
 
           {/* Instagram Follow Button */}
           <a
-            href="https://www.instagram.com/the.buzz_sandton"
+            href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 text-white font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-lg"
@@ -122,13 +124,13 @@ export function Team() {
 
                   {/* Instagram Reel Actions - Right Side */}
                   <div className="absolute right-3 bottom-20 flex flex-col gap-4">
-                    <button className="text-white hover:scale-110 transition-transform">
+                    <button className="text-white hover:scale-110 transition-transform" aria-label="Like post">
                       <Heart className="w-7 h-7" />
                     </button>
-                    <button className="text-white hover:scale-110 transition-transform">
+                    <button className="text-white hover:scale-110 transition-transform" aria-label="Comment on post">
                       <MessageCircle className="w-7 h-7" />
                     </button>
-                    <button className="text-white hover:scale-110 transition-transform">
+                    <button className="text-white hover:scale-110 transition-transform" aria-label="Share post">
                       <Share2 className="w-7 h-7" />
                     </button>
                   </div>
@@ -139,7 +141,7 @@ export function Team() {
 
                 {/* Click to View on Instagram */}
                 <a
-                  href="https://www.instagram.com/the.buzz_sandton"
+                  href={INSTAGRAM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="absolute inset-0 z-20 cursor-pointer"
@@ -155,7 +157,7 @@ export function Team() {
               Want to see more? Follow us on Instagram for daily updates!
             </p>
             <a
-              href="https://www.instagram.com/the.buzz_sandton"
+              href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-6 py-3 border-2 border-foreground text-foreground font-semibold rounded-lg hover:bg-foreground hover:text-background transition-all duration-300"
