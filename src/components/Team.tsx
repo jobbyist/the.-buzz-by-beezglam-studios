@@ -122,17 +122,17 @@ export function Team() {
                     </div>
                   </div>
 
-                  {/* Instagram Reel Actions - Right Side */}
-                  <div className="absolute right-3 bottom-20 flex flex-col gap-4">
-                    <button className="text-white hover:scale-110 transition-transform" aria-label="Like post">
+                  {/* Instagram Reel Actions - Right Side (Decorative) */}
+                  <div className="absolute right-3 bottom-20 flex flex-col gap-4 pointer-events-none">
+                    <div className="text-white opacity-90" aria-hidden="true">
                       <Heart className="w-7 h-7" />
-                    </button>
-                    <button className="text-white hover:scale-110 transition-transform" aria-label="Comment on post">
+                    </div>
+                    <div className="text-white opacity-90" aria-hidden="true">
                       <MessageCircle className="w-7 h-7" />
-                    </button>
-                    <button className="text-white hover:scale-110 transition-transform" aria-label="Share post">
+                    </div>
+                    <div className="text-white opacity-90" aria-hidden="true">
                       <Share2 className="w-7 h-7" />
-                    </button>
+                    </div>
                   </div>
 
                   {/* Hover Effect */}
@@ -145,7 +145,7 @@ export function Team() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="absolute inset-0 z-20 cursor-pointer"
-                  aria-label={`View ${reel.title} on Instagram`}
+                  aria-label={`Open ${reel.title} on Instagram in new tab`}
                 />
               </motion.div>
             ))}
